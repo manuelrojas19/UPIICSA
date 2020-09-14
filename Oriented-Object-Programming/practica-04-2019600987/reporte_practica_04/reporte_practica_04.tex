@@ -1,0 +1,54 @@
+\documentclass[]{article}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc} %Caracteres: UTF8s
+\usepackage{xcolor}
+\usepackage{listings}
+
+%opening
+\title{Reporte Práctica 04: Calculadora}
+\author{Rojas Ramos Manuel Antonio}
+
+\begin{document}
+
+\maketitle
+
+\section{Introducción}
+
+El presente reporte contiene el desarrollo de la practica 4, la cual consiste en el desarrollo de un programa que contenga una calculadora aritmética básica y científica y nos permita elegir entre una u otra utilizando Java Swing.
+
+\section{Desarrollo}
+
+\subsection{Diseño de la calculadora básica}
+
+Para desarrollar esta práctica se necesita resolver el cómo desarrollar una interfaz, implementar la funcionalidad y así mismo el como implementar un mecanismo para cambiar entre una calculadora u otra.
+
+Se comenzó con el diseño de la interfaz de la calculadora básica utilizando, como se menciono anteriormente, Java Swing. Para ello,  se comenzó creando una clase para la calculadora básica que hereda de \textit{JFrame} y se definieron las propiedades necesarias para crear una ventana, posteriormente se definieron los elementos como botones, paneles, displays y menús en función de lo que necesita una calculadora básica, se modificaron las propiedades de estos para establecer, texto, tamaño, etc. Se definió el layout a utilizar, en este caso un \textit{GridBagLayout} debido a que era el mas adecuado para la distribución de nuestros componentes y se agregaron los elementos a la interfaz.
+
+\subsection{Funcionalidad de la calculadora básica}
+
+Para la funcionalidad de la interfaz se implementaron \textit{listeners} para cada botón y elemento necesario para definir la acción a realizar después de presionar cierto elemento de la interfaz.
+
+Así mismo se implemento una maquina de estado, la cual cambia de estado dependiendo de la acción que se realiza teniendo los estados de \textit{inicio}, \textit{captura} y \textit{cálculo}. Dependiendo del estado en el que se encuentre se realizan distintas acciones, para el estado de captura se capturan los números que se ingresen en la calculadora al presionar los botones de los dígitos y operadores, para el estado de calculo después de presionar el botón igual se realiza la operación necesaria a partir de una clase llamada calculadora y se muestra en pantalla y finalmente para el estado de inicio se limpia la pantalla.
+
+Para realizar los cálculos se creo una clase llamada calculadora, la cual contiene métodos para recibir los valores y el operador, realizar la operación aritmética necesaria y devolver el resultado. Además se creo una clase para manejar las excepciones generadas por ciertas operaciones, como lo es la división entre cero.
+
+\subsection{Diseño de la Calculadora científica}
+
+Para el desarrollo de la calculadora científica se hizo uso de la \textit{herencia}, se creo una clase para la calculadora científica la cual hereda de la clase de la calculadora básica, a partir de ello, se definieron los elementos extras como botones que necesita una calculadora científica, en este caso se agregaron botones para distintas funciones matemáticas, se re-diseño toda la interfaz.
+
+\subsection{Funcionalidad de la calculadora científica}
+
+Para la funcionalidad de la calculadora científica se agrego un nuevo estado a la maquina de estado llamado \textit{función}. Este estado calcula una función a partir de lo que capturemos, después de presionar un botón para las funciones matemáticas y lo muestra en pantalla.
+
+Para realizar lo anterior se modifico la clase calculadora, se crearon métodos para calcular funciones, que reciben un numero y una función elegida y devuelven el resultado. En este caso se utilizaron distintos métodos la clase \textit{Math} para poder realizar las funciones más complejas.
+
+\subsection{Funcionalidad de cambio entre la calculadora básica y la calculadora científica}
+
+Para poder realizar esta funcionalidad se cambio clase de la que hereda la clase calculadora básica a \textit{JPanel} para que estas dos sean en paneles y no ventanas, posteriormente se creo una clase para la ventana que si hereda de \textit{JFrame}, y que contiene a las clases de las dos calculadoras. Se definieron las propiedades necesarias para esta clase, así mismo se agregaron los elementos necesarios para crear un menú que nos permita cambiar entre una u otra calculadora. Para poder realizar este cambio en la clase de la ventana se utilizo un \textit{CardLayout} el cual se utiliza para mostrar un panel u otro en determinado caso. Se definio que el panel a mostrar por defecto es el de la calculadora básica y a partir de los listeners del menú se implementa un mecanismo para poder mostrar el panel que sea necesario, cambiar el tamaño de la ventana y el titulo.
+
+\section{Conclusión}
+
+A partir del desarrollo de esta práctica puede aprender y aplicar distintos conceptos nuevos, como el diseño de interfaces usando Java Swing, la implementación de elementos como botones, menus, el uso de layouts, a implementar listeners para poder definir una acción a realizar a la hora de presionar un elemento, como cambiar entre distintos paneles en una misma ventana, también aprendí a trabajar con herencia al momento de desarrollar la calculadora científica y observar los beneficios de este recurso a la hora de trabajar con el, como lo es la reducción de código, también aprendí sobre la sobreescritura de métodos al momento de modificar algunos métodos de la clase de la calculadora básica para utilizarlos en la calculadora científica.
+
+\end{document}

@@ -1,0 +1,46 @@
+\documentclass[]{article}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc} %Caracteres: UTF8s
+\usepackage{xcolor}
+\usepackage{listings}
+
+%opening
+\title{Reporte Práctica 05: Pizarrón}
+\author{Rojas Ramos Manuel Antonio}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section{Introducción}
+	
+	El presente reporte contiene el desarrollo de la practica 5, la cual consiste en el desarrollo de un pizarrón utilizando Java Swing utilizando los mecanismos de Herencia y Polimorfismo para dibujar diferentes figuras.
+	
+	\section{Desarrollo}
+	
+	\subsection{Diseño del pizarrón}
+	
+	Para desarrollar esta práctica se necesita resolver el cómo desarrollar una interfaz, implementar la funcionalidad y así mismo el como implementar un mecanismo para imprimir distintas figuras en un pizarrón utilizando herencia y polimorfismo.
+	
+	Se comenzó con el diseño de la interfaz de la calculadora básica utilizando, como se menciono anteriormente, Java Swing. Para ello se creo una clase llamada \textit{ventanaPizarron},la cual contiene todos los paneles y botones que utilizaremos para nuestro programa, en este caso botones para elegir una figura y un panel para dibujar.
+	
+	\subsection{Funcionalidad del pizarrón}
+	
+	Para la funcionalidad de la interfaz se implemento una clase abstracta llamada \textit{figura} a partir de la cual, definimos las propiedades que debe tener una figura y luego creamos distintas clases para cada figura en especifico heredando de la clase figura, así mismo tenemos un método de clase abstracto llamado paint, el cual sobrescribimos para indicar como se debe imprimir en especifico una figura que creemos, en este punto es donde estamos utilizando los mecanismos de herencia y polimorfismo.
+	
+	Posteriormente haciendo uso de listeners en cada boton se elige la figura requerida y con las propiedades de clic podemos agregarlas al panel.
+	
+	También se trabajo en un mecanismo para poder seleccionar alguna figura y modificar sus propiedades como tamaño o color, para ello se implemento un \textit{ArrayList} de los objetos figuras que generemos en el pizarrón y trabajando con esta lista es como podemos guardar que elementos tenemos en el pizarrón y trabajar con ellos, en este caso seleccionando algún elemento para cambiar sus atributos.
+	
+	\subsection{Implementación con base de datos}
+	
+	Para realizar esta funcionalidad se utilizo una base de datos \textit{PostgreSQL} para almacenar los distintos dibujos que generemos en el pizarrón. Primero se realizo la conexión, en este caso usamos un pool de conexiones, que nos permite establecer distintas características para nuestra conexión a la base de datos. Posteriormente se genero una nueva clase llamada diagrama, la cual contiene atributos como el id, descripción, fecha de creación y modificación, así como un json que nos permite guardar la lista de figuras que definimos anteriormente y poder volver a implementarla según sea el caso. Esta clase fue la se uso para realizar las distintas consultas a la base de datos, a partir de ella se obtenían los datos para realizar las distintas operaciones CRUD. Esto con el fin de poder guardar los dibujos que realicemos en el pizarrón, poder volver a abrirlos, editar o eliminar.
+	
+	\section{Conclusión}
+	
+	A partir del desarrollo de esta práctica puede aprender y aplicar distintos conceptos nuevos sobre todo como aplicar el polimorfismo y la herencia en una aplicación, así mismo aprendí nuevos elementos sobre Java Swing como los utilizados para dibujar figuras geométricas y las propiedades del clic.
+	
+	También aprendí a implementar bases de datos, el como establecer una conexión entre una aplicación y una base de datos, a trabajar con un pool de conexiones, y como realizar distintas consultas a la base de datos y poder rescatar los datos de esas consultas para usarlos en mi aplicación, también vi un repaso con json, en este caso para guardar objetos serializandolos en formato de texto y su utilidad como una forma para guardar objetos en una base de datos y poder usarlos posteriormente si así se requiere.
+	
+\end{document}
