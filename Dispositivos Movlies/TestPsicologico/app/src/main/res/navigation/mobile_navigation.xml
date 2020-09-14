@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="mx.ipn.upiicsa.dmoviles.testpsicologico.ui.test.TestUI"
+        android:label="@string/menu_test"
+        tools:layout="@layout/fragment_test">
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="mx.ipn.upiicsa.dmoviles.testpsicologico.ui.resultados.ResultadosUI"
+        android:label="@string/menu_resultados"
+        tools:layout="@layout/fragment_resultados" />
+</navigation>

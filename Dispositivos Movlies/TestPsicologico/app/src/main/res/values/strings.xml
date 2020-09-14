@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TestPsicologico</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Test Psicolǵico</string>
+    <string name="nav_header_subtitle">Autor: Manuel Antonio Rojas Ramos</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_test">Test Psicológico</string>
+    <string name="menu_resultados">Resultados</string>
+
+    <string name="home_second">Home Second</string>
+</resources>
