@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Manuel Rojas</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/4.5.3/css/bootstrap.min.css">
+    <!-- Custom Scrollbar -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/scrollbar/jquery.mCustomScrollbar.min.css">
+</head>
+<body>
+<nav id="sidebar">
+    <ul class="list-unstyled components">
+        <li>
+            <a href="index.html">Acerca de mí</a>
+        </li>
+        <li>
+            <a href="estudios.html">Estudios</a>
+        </li>
+        <li>
+            <a href="hobbies.html">Hobbies</a>
+        </li>
+    </ul>
+</nav>
+<div id="content">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark ">
+        <button type="button" id="sidebarCollapse" class="btn navbar-toggler-icon position-fixed"></button>
+        <a class="navbar-brand mx-auto" href="index.html">Manuel Rojas</a>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark mt-sm-0 mt-md-0 mt-lg-5 mt-xl-5">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Acerca de mí </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="estudios.html">Estudios</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="hobbies.html">Hobbies <span
+                            class="sr-only">(current)</span> </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header id="secondary-header" class="jumbotron jumbotron-fluid"
+            style="background-image: url('images/jumeno.jpg')">
+        <div class="header-text text-center">
+            <h1 class="display-2 mt-5">Hobbies</h1>
+            <p class="lead">Acerca de lo que me gusta.</p>
+        </div>
+    </header>
+    <!-- Contenido principal -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-10 col-lg-10 col-md-12 mx-auto">
+                <!-- Conciertos -->
+                <h2 class="display-4 ">Conciertos</h2>
+                <p class="mt-4">
+                    Me gusta asistir a conciertos de mis bandas o artistas favoritos y festivales, he estado en:
+                </p>
+                <!-- Carousel -->
+                <div id="concerts-carousel" class="carousel slide mt-4" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#concerts-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#concerts-carousel" data-slide-to="1"></li>
+                        <li data-target="#concerts-carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/coachela.jpeg" class="d-block w-100 img-fluid" alt="coachella">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Festival coachella</h5>
+                                <p>Estuve aquí en diciembre del año pasado.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/glastonbury.jpeg" class="d-block w-100 img-fluid" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Festival Glastonbury</h5>
+                                <p>Estuve aquí hace dos años.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/cc.jpg" class="d-block w-100 img-fluid" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Festival Corona Capital</h5>
+                                <p>Asistí el año pasado.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#concerts-carousel" role="button"
+                       data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#concerts-carousel" role="button"
+                       data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row blue-section mt-5">
+            <div class="col-xl-10 col-lg-10 col-md-12 mx-auto ">
+                <!-- Música -->
+                <h2 class="display-4 mt-5">Música</h2>
+                <p class="mt-4">
+                    Me gusta mucho la música indie y alternativa, puedes escuchar las canciones que más me gustan
+                    este momento en Spotify:
+                </p>
+                <iframe class="embed-responsive-item col-12 mt-4 mb-5"
+                        src="https://open.spotify.com/embed/playlist/37i9dQZF1EppCxvis6BMtM" width="300"
+                        height="480"
+                        style="border:0;" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+        <!-- Libros -->
+        <div class="row">
+            <div class="col-xl-10 col-lg-11 col-md-12 mx-auto">
+                <h2 class="display-4 mt-4">Libros</h2>
+                <p class="mt-4">
+                    Estos son mis libros favoritos:
+                </p>
+                <ul class="list-unstyled ">
+                    <li class="media mt-2">
+                        <div class="media-img">
+                            <img src="images/book_farenheit.jpg"
+                                 class="img-thumbnail mr-3"
+                                 alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="card">
+                                <div class="card-header" id="heading_farenheit">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-block text-left collapsed"
+                                                type="button"
+                                                data-toggle="collapse" data-target="#collapse_farenheit"
+                                                aria-expanded="false" aria-controls="collapse_farenheit">
+                                            Farenheit 451 <small class="text-muted"> Ray
+                                            Bradbury </small>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapse_farenheit" class="collapse"
+                                     aria-labelledby="heading_farenheit">
+                                    <div class="card-body">
+                                        Fahrenheit 451 es una novela distópica del escritor estadounidense
+                                        Ray
+                                        Bradbury, publicada en 1953 y considerada una de sus mejores obras.
+                                        La
+                                        novela presenta una sociedad estadounidense del futuro en la que los
+                                        libros están prohibidos y existen «bomberos» que queman cualquiera
+                                        que
+                                        encuentren.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="media mt-3">
+                        <div class="media-img">
+                            <img src="images/book_1984.jpg" class="img-thumbnail mr-3" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="card">
+                                <div class="card-header" id="heading_orwell">
+                                    <button class="btn btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapse_orwell"
+                                            aria-expanded="false" aria-controls="collapse_orwell">
+                                        1984 <small class="text-muted"> George Orwell
+                                    </small>
+                                    </button>
+                                </div>
+                                <div id="collapse_orwell" class="collapse" aria-labelledby="heading_orwell">
+                                    <div class="card-body">
+                                        1984 es una novela política de ficción distópica, escrita por George
+                                        Orwell entre 1947 y 1948 y publicada el 8 de junio de 1949. La novela
+                                        popularizó los conceptos del omnipresente y vigilante Gran Hermano o
+                                        Hermano Mayor, de la notoria habitación 101, de la ubicua policía del
+                                        Pensamiento y de la neolengua, adaptación del idioma inglés en la que se
+                                        reduce y se transforma el léxico con fines represivos, basándose en el
+                                        principio de que lo que no forma parte de la lengua, no puede ser
+                                        pensado.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="media mt-3">
+                        <div class="media-img">
+                            <img src="images/book_100.jpeg" class="img-thumbnail mr-3" alt="">
+                        </div>
+                        <div class="media-body">
+                            <div class="card">
+                                <div class="card-header" id="heading_soledad">
+                                    <button class="btn btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapse_soledad"
+                                            aria-expanded="false" aria-controls="collapse_soledad">
+                                        Cien años de soledad <small class="text-muted"> Gabriel García
+                                        Marquez
+                                    </small>
+                                    </button>
+                                </div>
+                                <div id="collapse_soledad" class="collapse" aria-labelledby="heading_soledad">
+                                    <div class="card-body">
+                                        Cien años de soledad es una novela del escritor colombiano Gabriel
+                                        García Márquez, ganador del Premio Nobel de Literatura en 1982. Es
+                                        considerada una obra maestra de la literatura hispanoamericana y
+                                        universal, así como una de las obras más traducidas y leídas en
+                                        español. Fue catalogada como una de las obras más importantes de la
+                                        lengua castellana durante el IV Congreso Internacional de la Lengua
+                                        Española celebrado en Cartagena de Indias en marzo de 2007
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="overlay"></div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="assets/jquery/3.5.1/jquery-3.5.1.js"></script>
+<script src="assets/popper/1.16.0/popper.min.js"></script>
+<script src="assets/bootstrap/4.5.3/js/bootstrap.min.js"></script>
+<!-- Custom Scrollbar -->
+<script src="assets/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="scripts/sidebar.js"></script>
+</body>
+</html>

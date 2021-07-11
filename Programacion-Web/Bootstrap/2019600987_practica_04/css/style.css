@@ -1,0 +1,278 @@
+.navbar {
+    background-color: #282a36;
+}
+
+#main-header {
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+}
+
+#main-header .header-text {
+    padding: 180px 0 80px;
+    color: white;
+}
+
+#main-header .social-networks {
+    position: relative;
+    top: 100px;
+
+}
+
+#main-header .header-text .display-2 {
+    margin-top: 0;
+}
+
+#main-header .header-text .lead {
+    font-size: 24px;
+}
+
+#secondary-header {
+    background-size: cover;
+    position: relative;
+
+}
+
+#secondary-header .header-text .display-2 {
+    color: white;
+    padding: 70px 0 0;
+}
+
+#secondary-header .header-text .lead {
+    color: white;
+}
+
+.card {
+    margin-right: 1px;
+}
+
+.blue-section {
+    background-color: #44475a;
+}
+
+.blue-section p{
+    color: white;
+}
+
+.blue-section .display-4,
+.blue-section .lead {
+    color: white;
+}
+
+
+@media only screen and (min-width: 768px) {
+    #main-header .header-text {
+        padding: 150px 0;
+    }
+
+    #secondary-header .header-text {
+        padding: 80px 0;
+    }
+}
+
+@media only screen and (min-width: 962px) {
+    #main-header .header-text {
+        padding: 180px 0;
+    }
+
+    #secondary-header .header-text {
+        padding: 100px 0;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    #main-header .header-text {
+        padding: 220px 0;
+    }
+
+    #secondary-header .header-text {
+        padding: 160px 0;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    #main-header .header-text {
+        padding: 280px 0;
+    }
+
+    #secondary-header .header-text {
+        padding: 220px 0;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    #main-header .header-text {
+        padding: 480px 0;
+    }
+
+    #secondary-header .header-text {
+        padding: 220px 0;
+    }
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    z-index: 999;
+    background-color: #383a59;
+    color: white;
+    transition: all 0.3s;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#sidebar.active {
+    left: 0;
+    margin-top: 55px;
+}
+
+#sidebar ul {
+    margin-top: 200px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: white;
+    background: #9580ff;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(56, 58, 89, 0.5);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+#content {
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 500px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.media-img {
+    width: 120px;
+    height: 180px;
+    margin-right: 18px;
+}
+
+.media-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.fa {
+    padding: 12px;
+    font-size: 28px !important;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    background-color: #9580ff;
+}
+
+.fa-facebook {
+    background: #383a59;
+    color: white;
+}
+
+.fa-twitter {
+    background: #383a59;
+    color: white;
+}
+
+.fa-instagram {
+    background: #383a59;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #383a59;
+    color: white;
+}
+
+.card {
+    border-color: #383a59;
+}
+
+.card-header {
+    background-color: #383a59;
+}
+
+.card-header .card-title,
+.card-header .card-subtitle,
+.card-header .btn,
+.card-header .text-muted {
+    color: white !important;
+}
+
+.img-thumbnail {
+    border-color: #383a59;
+}
+
+a .card-header:hover {
+    background-color: #9580ff;
+}
+
+a .card:hover {
+    border-color: #9580ff;
+}
+
+body.lock-scroll {
+    overflow: hidden;
+}
+
+html.lock-scroll {
+    overflow: hidden;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}

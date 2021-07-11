@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f9946595-b183-4ac9-832b-d9b2b3ce8988" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1l4V3gX7wVWlNjiHNwWSenw5B9Q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/contactsApp" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$/assets/jquery/3.5.1" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index" type="JavascriptDebugType" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/2019600987_practica_05/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f9946595-b183-4ac9-832b-d9b2b3ce8988" name="Default Changelist" comment="" />
+      <created>1606856152945</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606856152945</updated>
+      <workItem from="1606856154002" duration="766000" />
+      <workItem from="1606857026539" duration="2673000" />
+      <workItem from="1606862123218" duration="11317000" />
+      <workItem from="1606917546474" duration="4704000" />
+      <workItem from="1606923628713" duration="1106000" />
+      <workItem from="1606927824119" duration="4243000" />
+      <workItem from="1606962271611" duration="8871000" />
+      <workItem from="1606972109814" duration="12000" />
+      <workItem from="1606972343289" duration="600000" />
+      <workItem from="1607008178665" duration="269000" />
+      <workItem from="1607009756073" duration="5796000" />
+      <workItem from="1607019512089" duration="867000" />
+      <workItem from="1607040565879" duration="275000" />
+      <workItem from="1607209753781" duration="1937000" />
+      <workItem from="1607211813651" duration="42000" />
+      <workItem from="1607211991574" duration="7709000" />
+      <workItem from="1607220794257" duration="6976000" />
+      <workItem from="1607293149369" duration="288000" />
+      <workItem from="1607293679739" duration="7294000" />
+      <workItem from="1607302549522" duration="35000" />
+      <workItem from="1607302615124" duration="3488000" />
+      <workItem from="1607306950039" duration="46000" />
+      <workItem from="1607381903381" duration="2853000" />
+      <workItem from="1608593620044" duration="99000" />
+      <workItem from="1613149376864" duration="21000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="20" key="#SSH_Configurations" timestamp="1607209824699">
+      <screen x="0" y="20" width="1366" height="698" />
+    </state>
+    <state x="0" y="20" key="#SSH_Configurations/0.20.1366.698@0.20.1366.698" timestamp="1607209824699" />
+    <state x="145" y="64" width="1071" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606856200721">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="145" y="64" width="1071" height="678" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.768@0.0.1366.768" timestamp="1606856200721" />
+    <state x="80" y="156" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607213455314">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="80" y="156" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.768@0.0.1366.768" timestamp="1607213455314" />
+    <state x="689" y="24" width="667" height="734" key="DirDiffDialog" timestamp="1607212842073">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="689" y="24" width="667" height="734" key="DirDiffDialog/0.0.1366.768@0.0.1366.768" timestamp="1607212842073" />
+    <state x="106" y="114" width="1174" height="504" key="DirDiffDialog/0.20.1366.698@0.20.1366.698" timestamp="1607210697411" />
+    <state x="468" y="163" key="FileChooserDialogImpl" timestamp="1613149396093">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="468" y="163" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1613149396093" />
+    <state x="0" y="41" width="975" height="698" key="SettingsEditor" timestamp="1607214197267">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="0" y="41" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1607214197267" />
+    <state x="114" y="20" width="975" height="698" key="SettingsEditor/0.20.1366.698@0.20.1366.698" timestamp="1607211844065" />
+    <state x="60" y="20" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1606966049754">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="60" y="20" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.768@0.0.1366.768" timestamp="1606966049754" />
+    <state x="504" y="20" width="444" height="495" maximized="true" key="dock-window-1" timestamp="1607224407422">
+      <screen x="0" y="20" width="1366" height="698" />
+    </state>
+    <state x="689" y="24" width="667" height="734" key="dock-window-1/0.0.1366.768@0.0.1366.768" timestamp="1607213265917" />
+    <state x="504" y="20" width="444" height="495" maximized="true" key="dock-window-1/0.20.1366.698@0.20.1366.698" timestamp="1607224407422" />
+    <state x="504" y="104" width="329" height="530" key="ftp.server.browser" timestamp="1607209909520">
+      <screen x="0" y="20" width="1366" height="698" />
+    </state>
+    <state x="504" y="104" width="329" height="530" key="ftp.server.browser/0.20.1366.698@0.20.1366.698" timestamp="1607209909520" />
+    <state x="221" y="314" width="250" height="182" key="publish.login" timestamp="1607384426005">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="221" y="314" key="publish.login/0.0.1366.768@0.0.1366.768" timestamp="1607384426005" />
+    <state x="221" y="305" width="250" height="182" key="publish.login/0.20.1366.698@0.20.1366.698" timestamp="1607222077308" />
+    <state x="345" y="180" width="672" height="677" key="run.anything.popup" timestamp="1607301453271">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="345" y="180" width="672" height="677" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1607301453271" />
+  </component>
+</project>

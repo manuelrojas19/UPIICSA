@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Manuel Rojas</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/4.5.3/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Color de la barra de navegación movil  -->
+    <meta name="theme-color" content="#282a36">
+</head>
+<body>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <a class="navbar-brand mx-auto" href="index.html">Manuel Rojas</a>
+    <button class="navbar-toggler fixed-top mt-2 ml-2" type="button" data-toggle="collapse" data-target="#navbar-menu"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Calculadoras
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="calculadora-aritmetica.html">Calculadora aritmética</a>
+                    <a class="dropdown-item active" href="calculadora-geometrica.html">Calculadora geométrica <span
+                            class="sr-only">(current)</span></a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Acerca de mí </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="estudios.html">Estudios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="hobbies.html">Hobbies</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<header id="secondary-header" class="jumbotron jumbotron-fluid"
+        style="background-image: url('images/geometry.jpg')">
+    <div class="header-text text-center">
+        <h1 class="display-2">Calculadora Geométrica</h1>
+        <p class="lead">Calculadora de perímetros, áreas y volúmenes.</p>
+    </div>
+</header>
+<!-- Contenido principal -->
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-xl-10 col-lg-11 col-md-12 mx-auto">
+            <h2 class="display-4 mt-3">Perímetros</h2>
+            <div id="accordion-perimetros">
+                <div class="card mt-3">
+                    <div class="card-header" id="heading-cuadrado">
+                        <h5 class="mb-0">
+                            <button class="btn collapsed" data-toggle="collapse" data-target="#collapse-cuadrado"
+                                    aria-expanded="false" aria-controls="collapse-cuadrado">
+                                Cuadrado
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse-cuadrado" class="collapse" aria-labelledby="heading-cuadrado"
+                         data-parent="#accordion-perimetros">
+                        <div class="card-body">
+                            <div id="alert-cuadrado" class="alert alert-danger fade show d-none" role="alert">
+                                <strong>Error</strong>
+                                <p id="txtalert-p-cuadrado"></p>
+                            </div>
+                            <form onsubmit="return false;">
+                                <div class="form-group row">
+                                    <label class="col-lg-2 col-form-label" for="lado_cuadrado">Ingrese el lado del
+                                        cuadrado:</label>
+                                    <div class="col-lg-10">
+                                        <input id="lado_cuadrado" type="number" min="0" step="0.00001"
+                                               class="form-control"
+                                               placeholder="Lado del cuadrado"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <button id="btn_perimetro_cuadrado" class="btn btn-calc-geometric mx-auto">
+                                        Calcular
+                                    </button>
+                                </div>
+                                <div class="form-group row">
+                                    <div id="res_perimetro_cuadrado" class="mx-auto"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header" id="heading-rectangulo">
+                        <h5 class="mb-0">
+                            <button class="btn collapsed" data-toggle="collapse"
+                                    data-target="#collapse-rectangulo"
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                Rectángulo
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse-rectangulo" class="collapse" aria-labelledby="heading-rectangulo"
+                         data-parent="#accordion-perimetros">
+                        <div class="card-body">
+                            <div id="alert-rectangulo-perimetro" class="alert alert-danger fade show d-none"
+                                 role="alert">
+                                <strong>Error</strong>
+                                <p id="txtalert-p-rectangulo"></p>
+                            </div>
+                            <form onsubmit="return false;">
+                                <div class="form-group row">
+                                    <label class="col-lg-2 col-form-label" for="alto_rectangulo">Ingrese el alto
+                                        del rectángulo</label>
+                                    <div class="col-lg-10">
+                                        <input id="alto_rectangulo" type="number" min="0" step="0.00001"
+                                               class="form-control"
+                                               placeholder="Altura del rectangulo"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-2 col-form-label" for="ancho_rectangulo">Ingrese el ancho
+                                        del rectángulo</label>
+                                    <div class="col-lg-10">
+                                        <input id="ancho_rectangulo" type="number" min="0" step="0.00001"
+                                               class="form-control"
+                                               placeholder="Ancho del rectangulo"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <button id="btn_perimetro_rectangulo" class="btn btn-calc-geometric mx-auto">
+                                        Calcular
+                                    </button>
+                                </div>
+                                <div class="form-group row">
+                                    <div id="res_perimetro_rectangulo" class="mx-auto"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header" id="heading-triangulo">
+                        <h5 class="mb-0">
+                            <button class="btn collapsed" data-toggle="collapse"
+                                    data-target="#collapse-triangulo" aria-expanded="false"
+                                    aria-controls="collapse-triangulo">
+                                Triángulo
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse-triangulo" class="collapse" aria-labelledby="heading-triangulo"
+                         data-parent="#accordion-perimetros">
+                        <div class="card-body">
+                            <div id="alert-triangulo-perimetro" class="alert alert-danger fade show d-none"
+                                 role="alert">
+                                <strong>Error</strong>
+                                <p id="txtalert-triangulo-perimetro"></p>
+                            </div>
+                            <form onsubmit="return false;">
+                                <div class="form-group row">
+                                    <label class="col-lg-2 col-form-label" for="lado1_triangulo">Ingrese el lado 1
+                                        del triángulo:</label>
+
+                                    <div class="col-lg-10">
+                                        <input id="lado1_triangulo" type="number" min="0" step="0.00001"
+                                               class="form-control"
+                                               placeholder="Lado 1 del triángulo"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-2 col-form-label" for="lado2_triangulo">Ingrese el lado 2
+                                        del triángulo:</label>
+                                    <div class="col-lg-10">
+                                        <input id="lado2_triangulo" type="number" min="0" step="0.00001"
+                                               class="form-control"
+                                               placeholder="Lado 2 del triángulo"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-2 col-form-label" for="lado3_triangulo">Ingrese el lado 3
+                                        del triángulo:</label>
+                                    <div class="col-lg-10">
+                                        <input id="lado3_triangulo" type="number" min="0" step="0.00001"
+                                               class="form-control"
+                                               placeholder="Lado 3 del triángulo"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <button id="btn_perimetro_triangulo" class="btn btn-calc-geometric mx-auto">
+                                        Calcular
+                                    </button>
+                                </div>
+                                <div class="form-group row">
+                                    <div id="res_perimetro_triangulo" class="mx-auto"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="display-4 mt-5">Áreas</h2>
+            <div id="accordion-areas">
+                <div class="card mt-3">
+                    <div class="card-header" id="heading-cuadrado-areas">
+                        <h5 class="mb-0">
+                            <button class="btn collapsed" data-toggle="collapse"
+                                    data-target="#collapse-cuadrado-areas"
+                                    aria-expanded="false" aria-controls="collapse-cubo">
+                                Cuadrado
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse-cuadrado-areas" class="collapse" aria-labelledby="heading-cuadrado-areas"
+                         data-parent="#accordion-areas">
+                        <div class="card-body">
+                            <div id="alert-cuadrado-area" class="alert alert-danger fade show d-none" role="alert">
+                                <strong>Error</strong>
+                                <p id="txtalert-cuadrado-area"></p>
+                            </div>
+                            <form onsubmit="return false;">
+                                <div class="form-group row">
+                                    <label class="col-lg-2 col-form-label" for="lado_cuadrado_area"> Ingrese el lado
+                                        del cuadrado:</label>
+                                    <div class="col-lg-10">
+                                        <input id="lado_cuadrado_area" type="number" min="0" step="0.00001"
+                                               class="form-control"
+                                               placeholder="Lado del cuadrado"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <button id="btn_area_cuadrado" class="btn btn-calc-geometric mx-auto">
+                                        Calcular
+                                    </button>
+                                </div>
+                                <div class="form-group row">
+                                    <div id="res_area_cuadrado" class="mx-auto"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header" id="heading-rectangulo-areas">
+                        <h5 class="mb-0">
+                            <button class="btn collapsed" data-toggle="collapse"
+                                    data-target="#collapse-rectangulo-areas"
+                                    aria-expanded="false" aria-controls="collapse-rectangulo-areas">
+                                Rectángulo
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse-rectangulo-areas" class="collapse" aria-labelledby="heading-rectangulo-areas"
+                         data-parent="#accordion-areas">
+                        <div class="card-body">
+                            <div id="alert-rectangulo-area" class="alert alert-danger fade show d-none" role="alert">
+                                <strong>Error</strong>
+                                <p id="txtalert-rectangulo-area"></p>
+                            </div>
+                            <form onsubmit="return false;">
+                                <div class="form-group row">
+                                    <label class="col-lg-2 col-form-label" for="ancho_rectangulo_area">
+                                        Ingrese el ancho del rectángulo:
+                                    </label>
+                                    <div class="col-lg-10">
+                                        <input id="ancho_rectangulo_area" type="number" min="0" step="0.00001"
+                                               class="form-control"
+                                               placeholder="Ancho del rectangulo"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-2 col-form-label" for="alto_rectangulo_area">
+                                        Ingrese el alto del rectángulo:
+                                    </label>
+                                    <div class="col-lg-10">
+                                        <input id="alto_rectangulo_area" type="number" min="0" step="0.00001"
+                                               class="form-control"
+                                               placeholder="Alto del rectangulo"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <button id="btn_area_rectangulo" class="btn btn-calc-geometric mx-auto">
+                                        Calcular
+                                    </button>
+                                </div>
+                                <div class="form-group row">
+                                    <div id="res_area_rectangulo" class="mx-auto"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header" id="heading-circulo-areas">
+                        <h5 class="mb-0">
+                            <button class="btn collapsed" data-toggle="collapse"
+                                    data-target="#collapse-circulo-areas" aria-expanded="false"
+                                    aria-controls="collapse-circulo-areas">
+                                Circulo
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse-circulo-areas" class="collapse" aria-labelledby="heading-circulo-areas"
+                         data-parent="#accordion-areas">
+                        <div class="card-body">
+                            <div id="alert-circulo-area" class="alert alert-danger fade show d-none" role="alert">
+                                <strong>Error</strong>
+                                <p id="txtalert-circulo-area"></p>
+                            </div>
+                            <form onsubmit="return false;">
+                                <div class="form-group row">
+                                    <label class="col-lg-2 col-form-label" for="diametro_circulo_area"> Ingrese el
+                                        diámetro del círculo:</label>
+                                    <div class="col-lg-10">
+                                        <input id="diametro_circulo_area" type="number" min="0" step="0.00001"
+                                               class="form-control"
+                                               placeholder="Diametro del circulo"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <button id="btn_area_circulo" class="btn btn-calc-geometric mx-auto">
+                                        Calcular
+                                    </button>
+                                </div>
+                                <div class="form-group row">
+                                    <div id="res_area_circulo" class="mx-auto"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="display-4 mt-5">Volúmenes</h2>
+            <div id="accordion-volumenes">
+                <div class="card mt-3">
+                    <div class="card-header" id="heading-cubo">
+                        <h5 class="mb-0">
+                            <button class="btn collapsed" data-toggle="collapse" data-target="#collapse-cubo"
+                                    aria-expanded="false" aria-controls="collapse-cubo">
+                                Cubo
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse-cubo" class="collapse" aria-labelledby="heading-cubo"
+                         data-parent="#accordion-volumenes">
+                        <div class="card-body">
+                            <div id="alert-cubo-volumen" class="alert alert-danger fade show d-none" role="alert">
+                                <strong>Error</strong>
+                                <p id="txtalert-cubo-volumen"></p>
+                            </div>
+                            <form onsubmit="return false;">
+                                <div class="form-group row">
+                                    <label class="col-lg-2 col-form-label" for="lado_cubo_volumen"> Ingrese el
+                                        lado del cubo:</label>
+                                    <div class="col-lg-10">
+                                        <input id="lado_cubo_volumen" type="number" min="0" step="0.00001"
+                                               class="form-control"
+                                               placeholder="Lado del cubo"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <button id="btn_volumen_cubo" class="btn btn-calc-geometric mx-auto">
+                                        Calcular
+                                    </button>
+                                </div>
+                                <div class="form-group row">
+                                    <div id="res_volumen_cubo" class="mx-auto"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header" id="heading-piramide">
+                        <h5 class="mb-0">
+                            <button class="btn collapsed" data-toggle="collapse"
+                                    data-target="#collapse-piramide"
+                                    aria-expanded="false" aria-controls="collapse-piramide">
+                                Pirámide
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse-piramide" class="collapse" aria-labelledby="heading-piramide"
+                         data-parent="#accordion-volumenes">
+                        <div class="card-body">
+                            <div id="alert-piramide-volumen" class="alert alert-danger fade show d-none" role="alert">
+                                <strong>Error</strong>
+                                <p id="txtalert-piramide-volumen"></p>
+                            </div>
+                            <form onsubmit="return false;">
+                                <div class="form-group row">
+                                    <label class="col-lg-2 col-form-label" for="anchobase_piramide_volumen"> Ingrese el
+                                        ancho de la base de la pirámide:</label>
+                                    <div class="col-lg-10">
+                                        <input id="anchobase_piramide_volumen" type="number" min="0" step="0.00001"
+                                               class="form-control"
+                                               placeholder="Ancho de la base"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-2 col-form-label" for="altobase_piramide_volumen"> Ingrese el
+                                        alto de la base de la pirámide:</label>
+                                    <div class="col-lg-10">
+                                        <input id="altobase_piramide_volumen" type="number" min="0" step="0.00001"
+                                               class="form-control"
+                                               placeholder="Lado del cubo"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-lg-2 col-form-label" for="altura_piramide_volumen"> Ingrese la
+                                        altura de la pirámide:</label>
+                                    <div class="col-lg-10">
+                                        <input id="altura_piramide_volumen" type="number" min="0" step="0.00001"
+                                               class="form-control"
+                                               placeholder="Altura de la pirámide"/>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <button id="btn_volumen_piramide" class="btn btn-calc-geometric mx-auto">
+                                        Calcular
+                                    </button>
+                                </div>
+                                <div class="form-group row">
+                                    <div id="res_volumen_piramide" class="mx-auto"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mt-3">
+                    <div class="card-header" id="heading-esfera">
+                        <h5 class="mb-0">
+                            <button class="btn collapsed" data-toggle="collapse"
+                                    data-target="#collapse-esfera" aria-expanded="false"
+                                    aria-controls="collapse-esfera">
+                                Esfera
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapse-esfera" class="collapse" aria-labelledby="heading-esfera"
+                         data-parent="#accordion-volumenes">
+                        <div class="card-body">
+                            <div id="alert-esfera-volumen" class="alert alert-danger fade show d-none" role="alert">
+                                <strong>Error</strong>
+                                <p id="txtalert-esfera-volumen"></p>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-lg-2 col-form-label" for="radio_esfera_volumen"> Ingrese el
+                                    radio de la esfera:</label>
+                                <div class="col-lg-10">
+                                    <input id="radio_esfera_volumen" type="number" min="0" step="0.00001"
+                                           class="form-control"
+                                           placeholder="Radio de la esfera"/>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <button id="btn_volumen_esfera" class="btn btn-calc-geometric mx-auto">
+                                    Calcular
+                                </button>
+                            </div>
+                            <div class="form-group row">
+                                <div id="res_volumen_esfera" class="mx-auto"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="assets/jquery/3.5.1/jquery-3.5.1.js"></script>
+<script src="assets/popper/1.16.0/popper.min.js"></script>
+<script src="assets/bootstrap/4.5.3/js/bootstrap.min.js"></script>
+<script src="scripts/calculadora_geometrica.js"></script>
+</body>
+</html>

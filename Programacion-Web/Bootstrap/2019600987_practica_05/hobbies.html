@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Manuel Rojas</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/4.5.3/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Color de la barra de navegación movil  -->
+    <meta name="theme-color" content="#282a36">
+</head>
+<body>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <a class="navbar-brand mx-auto" href="index.html">Manuel Rojas</a>
+    <button class="navbar-toggler fixed-top mt-2 ml-2" type="button" data-toggle="collapse" data-target="#navbar-menu"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar-menu">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Calculadoras
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="calculadora-aritmetica.html">Calculadora aritmética</a>
+                    <a class="dropdown-item" href="calculadora-geometrica.html">Calculadora geométrica</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Acerca de mí </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="estudios.html">Estudios</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="hobbies.html">Hobbies <span
+                        class="sr-only">(current)</span> </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<header id="secondary-header" class="jumbotron jumbotron-fluid mt-5"
+        style="background-image: url('images/jumeno.jpg')">
+    <div class="header-text text-center">
+        <h1 class="display-2">Hobbies</h1>
+        <p class="lead">Acerca de lo que me gusta.</p>
+    </div>
+</header>
+<!-- Contenido principal -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xl-10 col-lg-10 col-md-12 mx-auto">
+            <!-- Conciertos -->
+            <h2 class="display-3">Conciertos</h2>
+            <p class="mt-3">
+                Me gusta asistir a conciertos de mis bandas o artistas favoritos y festivales, he estado en:
+            </p>
+            <!-- Carousel -->
+            <div id="concerts-carousel" class="carousel slide mb-5 mt-3" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#concerts-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#concerts-carousel" data-slide-to="1"></li>
+                    <li data-target="#concerts-carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/coachela.jpeg" class="d-block w-100 img-fluid" alt="coachella">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Festival coachella</h5>
+                            <p>Estuve aquí en diciembre del año pasado.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/glastonbury.jpeg" class="d-block w-100 img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Festival Glastonbury</h5>
+                            <p>Estuve aquí hace dos años.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/cc.jpg" class="d-block w-100 img-fluid" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Festival Corona Capital</h5>
+                            <p>Asistí el año pasado.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#concerts-carousel" role="button"
+                   data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#concerts-carousel" role="button"
+                   data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row blue-section ">
+        <div class="col-xl-10 col-lg-10 col-md-12 mx-auto mt-4 mb-4">
+            <!-- Música -->
+            <h2 class="display-3">Música</h2>
+            <p class="mt-3 lead">
+                Me gusta mucho la música indie y alternativa, puedes escuchar las canciones que más me gustan
+                este momento en Spotify:
+            </p>
+            <iframe class=" col-xl-12 my-4"
+                    src="https://open.spotify.com/embed/playlist/37i9dQZF1EppCxvis6BMtM" width="300"
+                    height="480"
+                    style="border:none;" allowtransparency="true" allow="encrypted-media">
+            </iframe>
+        </div>
+    </div>
+    <div class="row dark-section">
+        <div class="col-xl-10 col-lg-11 col-md-12 mx-auto pt-4 pb-4">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-12 ">
+                    <h2 class="display-5">Sígueme en Spotify</h2>
+                    <p class="lead"> Si te gusto mi playlist puedes acceder a mi cuenta en Spotify haciendo click en el
+                        siguiente boton.</p>
+                </div>
+                <div class="col-xl-4 col-lg-4 offset-xl-2 offset-lg-2 col-md-12 col-12 align-self-center">
+                    <a href="https://open.spotify.com/user/1287788096" type="button"
+                       class="btn btn-light offset-xl-5 offset-lg-5">
+                        Acceder a mi Spotify</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Libros -->
+    <div class="row">
+        <div class="col-xl-10 col-lg-10 col-md-11 col-sm-12 col-12 mx-auto">
+            <h2 class="display-3 mt-4">Libros</h2>
+            <p class="mt-3">
+                Estos son mis libros favoritos:
+            </p>
+            <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
+                    <div class="media-img mt-3 mx-auto">
+                        <img src="images/book_farenheit.jpg"
+                             class="img-thumbnail mr-3"
+                             alt="">
+                    </div>
+                </div>
+                <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12">
+                    <div class="card mt-3">
+                        <div class="card-header" id="heading_farenheit">
+                            <h5 class="mb-0">
+                                <button class="btn btn-block text-left collapsed"
+                                        type="button"
+                                        data-toggle="collapse" data-target="#collapse_farenheit"
+                                        aria-expanded="false" aria-controls="collapse_farenheit">
+                                    Farenheit 451 <small class="text-muted"> Ray
+                                    Bradbury </small>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapse_farenheit" class="collapse"
+                             aria-labelledby="heading_farenheit">
+                            <div class="card-body">
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">No importa lo que hagas en tanto que cambies algo respecto a
+                                        como era antes de tocarlo, convirtiéndolo en algo que sea como tú después de
+                                        que separes de ello tus manos.</p>
+                                    <footer class="blockquote-footer">Ray Bradbury <cite title="Source Title">Farenheit
+                                        451</cite></footer>
+                                </blockquote>
+                                <p>
+                                    Fahrenheit 451 es una novela distópica del escritor estadounidense
+                                    Ray
+                                    Bradbury, publicada en 1953 y considerada una de sus mejores obras.
+                                    La
+                                    novela presenta una sociedad estadounidense del futuro en la que los
+                                    libros están prohibidos y existen «bomberos» que queman cualquiera
+                                    que
+                                    encuentren.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
+                    <div class="media-img mt-3 mx-auto">
+                        <img src="images/book_1984.jpg" class="img-thumbnail mr-3" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12">
+                    <div class="card mt-3">
+                        <div class="card-header" id="heading_orwell">
+                            <button class="btn btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapse_orwell"
+                                    aria-expanded="false" aria-controls="collapse_orwell">
+                                1984 <small class="text-muted"> George Orwell
+                            </small>
+                            </button>
+                        </div>
+                        <div id="collapse_orwell" class="collapse" aria-labelledby="heading_orwell">
+                            <div class="card-body">
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">Si la libertad significa algo, será, sobre todo, el derecho a
+                                        decirle a la gente aquello que no quiere oír.</p>
+                                    <footer class="blockquote-footer">George Orwell <cite
+                                            title="Source Title">1984</cite></footer>
+                                </blockquote>
+                                <p>
+                                    1984 es una novela política de ficción distópica, escrita por George
+                                    Orwell entre 1947 y 1948 y publicada el 8 de junio de 1949. La historia de esta
+                                    novela trata sobre Winston Smith, un hombre que trabaja en el “Ministerio de la
+                                    Verdad”, que se dedica a reescribir la historia. Él se da cuenta que su trabajo
+                                    ayuda al gobierno del Partido Único a vigilar casi omnipresente a la población.
+                                    Así que el protagonista se une a un grupo de resistencia que se llama La
+                                    Hermandad. Quieren escapar de ese férreo control que hace el Gobierno a una
+                                    juventud totalmente alineada.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
+                    <div class="media-img mt-3 mx-auto">
+                        <img src="images/book_100.jpeg" class="img-thumbnail mr-3" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12">
+                    <div class="card mt-3">
+                        <div class="card-header" id="heading_soledad">
+                            <button class="btn btn-block text-left collapsed" type="button"
+                                    data-toggle="collapse" data-target="#collapse_soledad"
+                                    aria-expanded="false" aria-controls="collapse_soledad">
+                                Cien años de soledad <small class="text-muted"> Gabriel García
+                                Márquez
+                            </small>
+                            </button>
+                        </div>
+                        <div id="collapse_soledad" class="collapse" aria-labelledby="heading_soledad">
+                            <div class="card-body">
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">La única diferencia actual entre liberales y conservadores, es
+                                        que los liberales van a misa de cinco y los conservadores van a misa de
+                                        ocho.</p>
+                                    <footer class="blockquote-footer">Gabriel García Márquez <cite
+                                            title="Source Title">Cien años de soledad</cite></footer>
+                                </blockquote>
+                                <p>
+                                    Cien años de soledad es una novela del escritor colombiano Gabriel
+                                    García Márquez, ganador del Premio Nobel de Literatura en 1982. Es
+                                    considerada una obra maestra de la literatura hispanoamericana y
+                                    universal, así como una de las obras más traducidas y leídas en
+                                    español. Fue catalogada como una de las obras más importantes de la
+                                    lengua castellana durante el IV Congreso Internacional de la Lengua
+                                    Española celebrado en Cartagena de Indias en marzo de 2007.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="list-unstyled">
+                <li class="media mt-3">
+
+                    <div class="media-body">
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row blue-section">
+        <div class="col-xl-10 col-lg-11 col-md-12 mx-auto mb-5">
+            <h2 class="display-3 mt-4">Series</h2>
+            <p class="lead mt-3">
+                Estos son mis series favoritas:
+            </p>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 mt-4">
+                    <a href="https://www.netflix.com/mx/title/70301870" class="card ">
+                        <img src="images/vikings.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="display-5 text-center">Vikings</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-sm-12 mt-4">
+                    <a href="https://www.netflix.com/mx/title/80100172" class="card">
+                        <img src="images/dark.jpg" class="card-img-top " alt="...">
+                        <div class="card-body">
+                            <h2 class="display-5 text-center">Dark</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4 col-sm-12 mt-4">
+                    <a href="https://www.netflix.com/mx/title/70143836" class="card ">
+                        <img src="images/bb.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="display-5 text-center">Breaking Bad</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-12 mt-4">
+                    <a href="https://www.netflix.com/mx/title/80057281" class="card">
+                        <img src="images/stranger-things.jpg" class="card-img-top " alt="...">
+                        <div class="card-body">
+                            <h3 class="display-5 text-center">Stranger Things</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-12 mt-4">
+                    <a href="https://www.netflix.com/mx/title/80002479" class="card">
+                        <img src="images/peaky-blinders.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="display-5 text-center">Peaky Blinders</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row dark-section">
+        <div class="col-xl-10 col-lg-11 col-md-12 mx-auto mb-5">
+            <h2 class="display-3 mt-4">Películas</h2>
+            <p class="lead mt-3">
+                Estos son mis películas favoritas:
+            </p>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 mt-4">
+                    <a href="https://www.amazon.com.mx/Interstellar/dp/B00EXPOCBG" class="card ">
+                        <img src="images/interestellar.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="display-5 text-center">Interestellar</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-sm-12 mt-4">
+                    <a href="https://www.amazon.com.mx/Arrival-Amy-Adams/dp/B01LTHYE04/ref=pd_sbs_74_2/135-1486816-5212649?_encoding=UTF8&pd_rd_i=B01LTHYE04&pd_rd_r=f0b176c4-9d7a-430a-b3b5-a2bc3f524c06&pd_rd_w=svGVL&pd_rd_wg=nNedW&pf_rd_p=f3b9d1f6-dac5-4913-9069-d5ee9209bec9&pf_rd_r=TQEQFYJZXK20ECJ0B20N&psc=1&refRID=TQEQFYJZXK20ECJ0B20N"
+                       class="card">
+                        <img src="images/arrival.jpg" class="card-img-top " alt="...">
+                        <div class="card-body">
+                            <h3 class="display-5 text-center">The Arrival</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="assets/jquery/3.5.1/jquery-3.5.1.js"></script>
+<script src="assets/popper/1.16.0/popper.min.js"></script>
+<script src="assets/bootstrap/4.5.3/js/bootstrap.min.js"></script>
+</body>
+</html>

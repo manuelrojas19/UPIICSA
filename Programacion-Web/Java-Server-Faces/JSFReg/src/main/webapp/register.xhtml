@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+	<title>JavaServer Faces aplicación de registro simple</title>
+</h:head>
+<h:body>
+	<h:form>
+		<h2>JSF Registro</h2>
+		<h4>Formulario de registro</h4>
+		<table>
+			<tr>
+				<td>First Name:</td>
+				<td><h:inputText label="Nombre" id="fname"
+						value="#{userBean.firstName}" required="true" /> <h:message
+						for="fname" /></td>
+			</tr>
+			<tr>
+				<td>Last Name:</td>
+				<td><h:inputText label="Apellido" id="lname"
+						value="#{userBean.lastName}" required="true" /> <h:message
+						for="lname" /></td>
+			</tr>
+			<tr>
+				<td>Sex:</td>
+				<td><h:selectOneRadio label="Sex" id="sex"
+						value="#{userBean.sex}" required="true">
+						<f:selectItem itemLable="Male" itemValue="male" />
+						<f:selectItem itemLable="Female" itemValue="female" />
+					</h:selectOneRadio> <h:message for="sex" /></td>
+			</tr>
+			<tr>
+				<td>Date of Birth:</td>
+				<td><h:inputText label="Fecha de Nacimiento" id="dob"
+						value="#{userBean.dob}" required="true">
+						<f:convertDateTime pattern="MM-dd-yy" />
+					</h:inputText> (mm-dd-yy) <h:message for="dob" /></td>
+			</tr>
+			<tr>
+				<td>Email Address:</td>
+				<td><h:inputText label="Correo Electrónico" id="email"
+						value="#{userBean.email}" required="true"
+						validator="#{userBean.validateEmail}" /> <h:message for="email" />
+				</td>
+			</tr>
+			<tr>
+				<td>Service Level:</td>
+				<td><h:selectOneMenu label="Nivel de Servicio"
+						value="#{userBean.serviceLevel}">
+						<f:selectItem itemLabel="Medium" itemValue="medium" />
+						<f:selectItem itemLabel="Basic" itemValue="basic" />
+						<f:selectItem itemLabel="Premium" itemValue="premium" />
+					</h:selectOneMenu></td>
+			</tr>
+		</table>
+		<p>
+			<h:messages />
+		</p>
+		<p>
+			<h:commandButton value="Register" action="confirm" />
+		</p>
+	</h:form>
+</h:body>
+</html>

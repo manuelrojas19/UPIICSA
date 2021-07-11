@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6564d49a-b911-4165-83e8-e57fb755d1fc" name="manuel-gcloud" url="http://35.184.16.20/">
+        <fileTransfer accessType="SFTP" host="35.184.16.20" port="22" sshConfigId="91d0a984-3bf6-4e8e-8163-28699953a082" sshConfig="manueldev@35.184.16.20:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

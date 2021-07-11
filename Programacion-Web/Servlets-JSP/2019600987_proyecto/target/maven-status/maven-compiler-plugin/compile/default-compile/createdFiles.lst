@@ -1,0 +1,3 @@
+mx/ipn/upiicsa/web/view/LoginView.class
+mx/ipn/upiicsa/web/servlets/LoginServlet.class
+mx/ipn/upiicsa/web/entity/User.class

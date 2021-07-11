@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/resources/decorators">
+    <decorator name="login" page="login-theme.jsp">
+        <pattern>/login.jsp</pattern>
+    </decorator>
+    <decorator name="global" page="global-theme.jsp">
+        <pattern>/*</pattern>
+    </decorator>
+</decorators>
