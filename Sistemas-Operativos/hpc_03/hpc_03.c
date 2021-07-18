@@ -123,26 +123,3 @@ void proceso_hijo(int np, int pipe_fd[])
     exit(np);
 }
 
-/*
- * Tarea
- *
- * Arreglo A, se llenara con un tamaño bloque N de 4096, se generara la funcion 
- * senoidal con esas muestras
- *
- * Arreblo B, se llenara con valores de la ventana hann, funcion cosenoidal que se aplica
- * cuando se hace disenio de filtros digitales
- *
- * Se hara el producto
- *
- * Se guardaran los elementos de la funcion senoidal, ventana hann y el producto
- *
- * Se graficara con gnu plot
- *
- * Version hilos y procesos
- *
- * Fenomeno Gips
- *
- * Si algunos productos son independientes de otros se pueden paralelizar, cuando no
- * existen dependencias
- * 
- * */
